@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>技术支持 - 食光冰箱</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            color: #333;
+        }
+        .container {
+            padding: 20px;
+        }
+        h1, h2 {
+            color: #2196F3;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .language-switch {
+            text-align: right;
+            margin-bottom: 20px;
+        }
+        .back-link {
+            display: inline-block;
+            margin-top: 20px;
+            color: #2196F3;
+            text-decoration: none;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+        .faq-item {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 20px;
+        }
+        .faq-item h3 {
+            color: #1976D2;
+            margin-bottom: 10px;
+        }
+        .contact-info {
+            background-color: #f5f5f5;
+            padding: 20px;
+            border-radius: 5px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="language-switch">
+            <a href="#" onclick="toggleLanguage(event)">English / 中文</a>
+        </div>
+
+        <div class="zh">
+            <h1>技术支持</h1>
+            
+            <h2>常见问题</h2>
+            
+            <div class="faq-item">
+                <h3>如何添加新的食材？</h3>
+                <p>1. 点击底部导航栏的"添加"按钮</p>
+                <p>2. 选择食材类别</p>
+                <p>3. 选择具体食材并设置存储位置</p>
+                <p>4. 点击确认添加</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>如何设置提醒时间？</h3>
+                <p>1. 进入"模版调整"页面</p>
+                <p>2. 点击需要修改的食材</p>
+                <p>3. 调整保质期和提醒时间</p>
+                <p>4. 保存更改</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>为什么没有收到通知？</h3>
+                <p>请检查以下设置：</p>
+                <ul>
+                    <li>确保在系统设置中允许应用发送通知</li>
+                    <li>检查应用内是否正确设置了提醒时间</li>
+                    <li>确保没有开启"勿扰模式"</li>
+                </ul>
+            </div>
+
+            <div class="contact-info">
+                <h2>联系我们</h2>
+                <p>如果您遇到其他问题或需要帮助，请通过以下方式联系我们：</p>
+                <p>邮箱：943062710@qq.com</p>
+                <p>我们会在24小时内回复您的问题。</p>
+            </div>
+        </div>
+
+        <div class="en" style="display: none;">
+            <h1>Technical Support</h1>
+            
+            <h2>FAQ</h2>
+            
+            <div class="faq-item">
+                <h3>How to add new food items?</h3>
+                <p>1. Click the "Add" button in the bottom navigation bar</p>
+                <p>2. Select food category</p>
+                <p>3. Choose specific food item and set storage location</p>
+                <p>4. Confirm to add</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>How to set reminder time?</h3>
+                <p>1. Go to "Template Settings" page</p>
+                <p>2. Click on the food item you want to modify</p>
+                <p>3. Adjust expiration and reminder time</p>
+                <p>4. Save changes</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Why am I not receiving notifications?</h3>
+                <p>Please check the following settings:</p>
+                <ul>
+                    <li>Ensure notifications are allowed in system settings</li>
+                    <li>Check if reminder time is correctly set in the app</li>
+                    <li>Make sure "Do Not Disturb" mode is off</li>
+                </ul>
+            </div>
+
+            <div class="contact-info">
+                <h2>Contact Us</h2>
+                <p>If you encounter other issues or need help, please contact us:</p>
+                <p>Email: 943062710@qq.com</p>
+                <p>We will respond to your questions within 24 hours.</p>
+            </div>
+        </div>
+
+        <a href="index.html" class="back-link zh">返回主页</a>
+        <a href="index.html" class="back-link en" style="display: none;">Back to Home</a>
+    </div>
+
+    <script>
+        function toggleLanguage(event) {
+            event.preventDefault();
+            const zhElements = document.querySelectorAll('.zh');
+            const enElements = document.querySelectorAll('.en');
+            
+            zhElements.forEach(el => {
+                el.style.display = el.style.display === 'none' ? 'block' : 'none';
+            });
+            
+            enElements.forEach(el => {
+                el.style.display = el.style.display === 'none' ? 'block' : 'none';
+            });
+        }
+    </script>
+</body>
+</html> 

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>隐私政策 - 食光冰箱</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            color: #333;
+        }
+        .container {
+            padding: 20px;
+        }
+        h1, h2 {
+            color: #2196F3;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .language-switch {
+            text-align: right;
+            margin-bottom: 20px;
+        }
+        .back-link {
+            display: inline-block;
+            margin-top: 20px;
+            color: #2196F3;
+            text-decoration: none;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="language-switch">
+            <a href="#" onclick="toggleLanguage(event)">English / 中文</a>
+        </div>
+
+        <div class="zh">
+            <h1>隐私政策</h1>
+            
+            <h2>引言</h2>
+            <p>食光冰箱（"我们"）重视用户的隐私。本隐私政策说明我们如何收集、使用和保护您的个人信息。</p>
+
+            <h2>信息收集</h2>
+            <p>我们只收集应用功能必需的信息：</p>
+            <ul>
+                <li>设备信息：用于提供基本功能</li>
+                <li>应用数据：您在应用中创建的冰箱、食材信息</li>
+            </ul>
+
+            <h2>信息使用</h2>
+            <p>收集的信息仅用于：</p>
+            <ul>
+                <li>提供应用的核心功能</li>
+                <li>发送过期提醒通知</li>
+                <li>改进用户体验</li>
+            </ul>
+
+            <h2>信息存储</h2>
+            <p>所有数据均存储在您的设备本地，我们不会上传或分享您的个人信息。</p>
+
+            <h2>第三方服务</h2>
+            <p>我们不使用任何第三方分析服务，也不会与第三方分享您的信息。</p>
+
+            <h2>联系我们</h2>
+            <p>如果您对本隐私政策有任何疑问，请通过以下方式联系我们：</p>
+            <p>邮箱：943062710@qq.com</p>
+        </div>
+
+        <div class="en" style="display: none;">
+            <h1>Privacy Policy</h1>
+            
+            <h2>Introduction</h2>
+            <p>WakeUpRef ("we") values your privacy. This privacy policy explains how we collect, use, and protect your personal information.</p>
+
+            <h2>Information Collection</h2>
+            <p>We only collect information necessary for app functionality:</p>
+            <ul>
+                <li>Device information: for basic functionality</li>
+                <li>App data: refrigerator and food information you create in the app</li>
+            </ul>
+
+            <h2>Information Usage</h2>
+            <p>Collected information is only used for:</p>
+            <ul>
+                <li>Providing core app functionality</li>
+                <li>Sending expiration reminders</li>
+                <li>Improving user experience</li>
+            </ul>
+
+            <h2>Information Storage</h2>
+            <p>All data is stored locally on your device. We do not upload or share your personal information.</p>
+
+            <h2>Third-Party Services</h2>
+            <p>We do not use any third-party analytics services or share your information with third parties.</p>
+
+            <h2>Contact Us</h2>
+            <p>If you have any questions about this privacy policy, please contact us:</p>
+            <p>Email: 943062710@qq.com</p>
+        </div>
+
+        <a href="index.html" class="back-link zh">返回主页</a>
+        <a href="index.html" class="back-link en" style="display: none;">Back to Home</a>
+    </div>
+
+    <script>
+        function toggleLanguage(event) {
+            event.preventDefault();
+            const zhElements = document.querySelectorAll('.zh');
+            const enElements = document.querySelectorAll('.en');
+            
+            zhElements.forEach(el => {
+                el.style.display = el.style.display === 'none' ? 'block' : 'none';
+            });
+            
+            enElements.forEach(el => {
+                el.style.display = el.style.display === 'none' ? 'block' : 'none';
+            });
+        }
+    </script>
+</body>
+</html> 
